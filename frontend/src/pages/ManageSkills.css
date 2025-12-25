@@ -1,0 +1,13 @@
+.manage-page { min-height: 100vh; background: #f7f7fb; }
+.manage-container { max-width: 1000px; margin: 2rem auto; padding: 1.5rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 18px rgba(20,20,40,0.06); }
+.skills-columns { display: flex; gap: 2rem; }
+.column { flex: 1; padding: 1rem; border-radius: 8px; background: linear-gradient(180deg, #ffffff, #fbfbff); box-shadow: inset 0 1px 0 rgba(255,255,255,0.6); }
+.skill-list { margin-top: 1rem; display:flex; flex-direction:column; gap:0.5rem }
+.skill-row { display:flex; justify-content:space-between; align-items:center; padding:0.5rem; border-radius:8px; background:#fbfbff; }
+.skill-name { font-weight:600; color:#222 }
+.skill-actions { display:flex; gap:0.5rem }
+.btn { background:#7c3aed; color:#fff; border:none; padding:0.4rem 0.75rem; border-radius:6px; cursor:pointer }
+.btn.small { padding:0.25rem 0.5rem; font-size:0.9rem }
+.btn.danger { background:#ef4444 }
+.add-row { margin-top:1rem; display:flex; gap:0.5rem }
+.add-row input { flex:1; padding:0.5rem; border-radius:6px; border:1px solid #e6e6f0 }

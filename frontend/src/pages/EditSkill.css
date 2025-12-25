@@ -1,0 +1,6 @@
+.edit-page { min-height:100vh; background:#f7f7fb }
+.edit-container { max-width:600px; margin:3rem auto; background:#fff; padding:1.5rem; border-radius:12px; box-shadow:0 6px 24px rgba(20,20,40,0.06) }
+.edit-container input { width:100%; padding:0.6rem; border-radius:8px; border:1px solid #e6e6f0; margin-top:0.5rem }
+.edit-actions { margin-top:1rem; display:flex; gap:0.5rem }
+.btn { background:#7c3aed; color:#fff; border:none; padding:0.5rem 0.9rem; border-radius:8px }
+.btn.ghost { background:#eef2ff; color:#333 }

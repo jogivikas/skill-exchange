@@ -1,0 +1,146 @@
+.find-match-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.find-match-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.page-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.match-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.match-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.match-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ede9fe;
+  color: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.match-info {
+  flex: 1;
+}
+
+.match-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.match-rating {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.match-percent {
+  background: #10b981;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.match-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-offered,
+.skills-wanted {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-offered strong,
+.skills-wanted strong {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.skill-tag.purple {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.skill-tag.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.send-request-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.send-request-btn:hover {
+  background: #6d28d9;
+}
+
