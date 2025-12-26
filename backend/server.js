@@ -13,7 +13,7 @@ import { createServer } from "http";
 import { Server as SocketIOServer } from "socket.io";
 import jwt from "jsonwebtoken";
 import { createMessage, markMessagesAsRead } from "./database/db.js";
-
+//easy
 dotenv.config();
 
 const app = express();
@@ -90,14 +90,15 @@ io.on("connection", (socket) => {
   socket.on("sendMessage", async (data, ack) => {
     try {
       // Data should contain the full message object returned from API
-      // OR we can trust the client to send fields, but better to just relay 
+      // OR we can trust the client to send fields, but better to just relay
       // what the client got from POST /messages/send
-      const { conversationId, text, senderId, receiverId, _id, createdAt } = data;
+      const { conversationId, text, senderId, receiverId, _id, createdAt } =
+        data;
 
       if (!conversationId || !text) return;
 
-      // Broadcast to everyone in the room (including sender if they have multiple tabs open, 
-      // but usually we want to emit to others). 
+      // Broadcast to everyone in the room (including sender if they have multiple tabs open,
+      // but usually we want to emit to others).
       // broadcast.to(room) sends to everyone EXCEPT sender.
       // io.to(room) sends to everyone INCLUDING sender.
 
@@ -107,7 +108,7 @@ io.on("connection", (socket) => {
         senderId,
         receiverId,
         text,
-        createdAt
+        createdAt,
       });
 
       ack && ack({ ok: true });
@@ -130,7 +131,7 @@ io.on("connection", (socket) => {
       socket.to(conversationId).emit("messagesSeen", {
         conversationId,
         seenBy: userId,
-        seenAt: new Date()
+        seenAt: new Date(),
       });
     } catch (err) {
       console.error("Socket messagesSeen error:", err);
